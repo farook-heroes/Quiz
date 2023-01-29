@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title> My Quiz</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script type="text/javascript" src="JS/index.js">
+    </script>
+  </head>
+  <body alt="background_image">
+    
+    <div id="navigator">
+      <span id="quiz_text">QUIZ GAME</span>
+    </div>
+    <div class="container" id="quiz">
+      <div id="progress">
+        <div id="progress_bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+      
+        </div>
+      </div>
+        <div id="page_header">
+          <h3 id="question">Question</h3>
+        </div>
+        <ul id="list_group">
+          <li id="list_group_item">
+            <div class="round">
+               <input type="radio" name="answer" id="a" class="answer" value="a">
+               <label for="a" id="a_text">Question</label>
+            </div>
+          </li>
+          <li id="list_group_item">
+            <div class="round">
+               <input type="radio" name="answer" id="b" class="answer" value="b">
+               <label for="b" id="b_text">Question</label>
+            </div>
+          </li>
+          <li id="list_group_item">
+            <div class="round">
+               <input type="radio" name="answer" id="c" class="answer" value="c">
+               <label for="c" id="c_text">Question</label>
+            </div>
+          </li>
+          <li id="list_group_item">
+            <div class="round">
+               <input type="radio" name="answer" id="d" class="answer" value="d">
+               <label for="d" id="d_text">Question</label>
+            </div>
+          </li>
+        </ul>
+       
+        <div id="result"> 
+           <h2 id="points">50%</h2>
+      
+      </div>
+        
+	<div id="btn_group" role="group" aria-label="Basic example">
+    <button type="button" class ="btn_btn_primary" id="prev"  onclick="decrement()"style="display: block;">Prev</button>
+    <button type="button" class="btn_btn_primary" id="submit"  onclick="calculate()" style="visibility: hidden; ">Submit</button>   
+    <button type="button" class="btn_btn_primary" onclick="increment()" id="next">Next</button>
+	
+	</div>
+       
+    </div>
+    
+
+
+  </body>
+</html>
